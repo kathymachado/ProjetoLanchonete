@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete CCK</title>
+    <link rel="stylesheet" href="css/vidaamorosa.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1 class="text-center">Bem-vindo à Lanchonete CCK</h1>
+        </div>
+    </header>
+
+    <section class="container my-4">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <img src="img/lanche1.jpg" alt="Hambúrguer" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 mb-3">
+                <img src="img/bebidinhas.webp" alt="Bebida" class="img-fluid rounded">
+            </div>
+                <div class="col-md-6 mb-3">
+                    <img src="img/iffod.jpg" alt="Bebida" class="Lanchonete iffod">
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="container my-4">
+        <div class="row">
+            <section id="menu" class="col-md-6 mb-3">
+                <h2>Menu:</h2>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/lanche.webp">Hambúrguer - R$19,99
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Hambúrguer', 19.99)">Adicionar</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                       <img src="img/batata.jpg"> Batata Frita (Pequena) - R$11,99
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Batata Frita (pequena)', 11.99)">Adicionar</button>
+                    </li> 
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/batatam.jfif"> Batata Frita (Média) - R$18,99
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Batata Frita (media)', 18.99)">Adicionar</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/batatag.webp"> Batata Frita (Grande) - R$24,99
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Batata Frita (grande)', 24.99)">Adicionar</button>
+                    </li>
+                    <il class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/pizza.jpg"> Pizza - R$ 50,90 
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Pizza', 50.90)">Adicionar</button>
+                    </il>
+                    <il class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/pastel.jpeg"> Pastel - R$ 14,90 
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Pastel', 10.90)">Adicionar</button>
+                    </il>
+                    <il class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/centro.webp">Centro de Salgados (Pequena) - R$ 12,90 
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Centro de Salgados (Pequena)', 12.90)">Adicionar</button>
+                    </il>
+                    <il class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/centrom.jpg"> Centro de Salgados (Média)- R$ 16,90 
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Centro de Salgados (Média)', 16.90)">Adicionar</button>
+                    </il>
+                    <il class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/centrog.jpg">Centro de Salgados (Grande) - R$ 39,90 
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Centro de Salgados (Grande)', 49.90)">Adicionar</button>
+                    </il>
+                    <h2>Bebidas:</h2>       
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/lata.jpg">Refrigerante Lata - R$5,99
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Refrigerante Lata', 5.99)">Adicionar</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/2l.jfif">Refrigerante 2 Litros - R$11,90
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Refrigerante 2 Litros', 11.90)">Adicionar</button>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/cerveja.jfif">Cervejas - R$ 3,90 
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Cervejas', 3.90)">Adicionar</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/gin.webp">Gin - R$ 18,90 
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Gin', 18.90)">Adicionar</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/drink.jfif">Drink de morango - R$ 10,90 
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Drink de morango', 10.90)">Adicionar</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/vinho.avif">Vinho de Garrafa - R$ 17,90 
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Vinho', 17.90)">Adicionar</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/agua.jpg"> Água Mineral - R$ 2,50
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Água mineral', 2.50)">Adicionar</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/sucos.jpg">Suco Natural (Garrafa) - R$ 15,50
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Sucos Naturais (Garrafa)', 15.50)">Adicionar</button>
+                    </li>
+                    <h2>Sobremesas:</h2>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/pote.jfif">Sorvete (Pote) - R$ 9,99 
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Sorvete(pote)', 9.99)">Adicionar</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/picole.jfif">Sorvete (Picolé) - R$ 4,99 
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('sorvete(Picolé)', 4.99)">Adicionar</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/bolo.jpg">Bolo de Pote - R$ 10,90 
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Bolo de Pote', 10.90)">Adicionar</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/açai.webp">Açaí - R$ 15,50 
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Açaí', 15.50)">Adicionar</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="img/musse.webp">Mousse - R$ 10,90 
+                        <button class="btn btn-success btn-sm" onclick="addToOrder('Mousse', 10.90)">Adicionar</button>
+                    </li>
+                </ul>
+            </section>
+            <section id="order" class="col-md-6 mb-3">
+                <h2>Seu Pedido</h2>
+                <ul id="order-list" class="list-group"></ul>
+                <p>Total de itens: <span id="item-count">0</span></p>
+                <p>Valor Total: R$<span id="total-value">0.00</span></p>
+                <p>
+                    <button id="list-group" class="btn btn-primary" onclick="finalizarCompra()">Finalizar Compra</button>
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html
