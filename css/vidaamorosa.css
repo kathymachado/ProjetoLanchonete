@@ -1,0 +1,102 @@
+/* Reset básico para margens e preenchimento */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estiliza o cabeçalho */
+header {
+    background-color: #0a81f8; /* Cor de fundo escura */
+    color: #fff; /* Texto branco */
+    padding: 1rem 0; /* Espaçamento vertical */
+}
+
+header h1 {
+    font-size: 2rem; /* Tamanho da fonte */
+}
+
+/* Estiliza as imagens */
+.img-fluid {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estiliza o menu */
+#menu {
+    border: 1px solid #0979e8; /* Borda leve */
+    border-radius: .375rem; /* Bordas arredondadas */
+    padding: 1rem; /* Espaçamento interno */
+    background-color: #c710ff; /* Cor de fundo leve */
+}
+
+#menu h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    margin-bottom: 1rem; /* Espaçamento inferior */
+}
+
+/* Estiliza o pedido */
+#order {
+    border: 1px solid #101215; /* Borda leve */
+    border-radius: .375rem; /* Bordas arredondadas */
+    padding: 1rem; /* Espaçamento interno */
+    background-color: #5befb9; /* Cor de fundo leve */
+}
+
+#order h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    margin-bottom: 1rem; /* Espaçamento inferior */
+}
+
+#order-list {
+    list-style-type: none; /* Remove marcadores padrão */
+    padding: 0; /* Remove o preenchimento */
+}
+
+/* Estilo dos itens da lista */
+.list-group-item {
+    border: 1px solid #9dc2e7; /* Borda leve */
+    border-radius: .375rem; /* Bordas arredondadas */
+    padding: .75rem 1.25rem; /* Espaçamento interno */
+    margin-bottom: .5rem; /* Espaçamento inferior entre itens */
+}
+
+.btn-success {
+    background-color: #d91111; /* Cor de fundo verde */
+    border-color: #a7283d; /* Cor da borda verde */
+}
+.btn-primary {
+    background-color: #0979e8;
+    border-color:#0a81f8;
+}
+
+.btn-primary:hover {
+    background-color: #0979e8;
+    border-color: #0a81f8;
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Cor de fundo verde escuro ao passar o mouse */
+    border-color: #1e7e34; /* Cor da borda verde escuro ao passar o mouse */
+}
+
+.text-center {
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.my-4 {
+    margin-top: 1.5rem; /* Margem superior */
+    margin-bottom: 1.5rem; /* Margem inferior */
+}
+
+.mb-3 {
+    margin-bottom: 1rem; /* Margem inferior */
+}
+header class {
+    & img {
+        width: 250px;
+    }
+    
+}
+img{max-width: 200px;}
+img{height: auto;}
+img{flex-wrap: wrap;}
